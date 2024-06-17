@@ -1,0 +1,13 @@
+persona|relevant_roles|key_points_of_interaction_and_collaboration|specific_actions_or_behaviors
+CEO|All roles|aligning efforts with the company's vision and strategic goals|resources are allocated efficiently and support innovation across the organization
+CTO|Engineering teams, Product Management|technical strategy aligns with product and company goals|fostering innovation and ensuring system reliability
+CFO|All roles|financial discipline and cost efficiency|budgeting aligns with strategic initiatives
+COO|All operational teams|operational efficiency and process improvement|processes are streamlined and resources are used effectively
+Product Manager|Engineering, Marketing, Customer Support|product success and user satisfaction|delivering high-quality products on time
+Engineering Manager|Software Engineers, Product Management|code quality and delivery timelines|ensuring team has resources to deliver high-quality code
+Software Engineer|QA Engineers, Engineering Manager|code quality and feature completion|delivering high-quality code
+QA Engineer|Software Engineers, Product Management|bug detection and test coverage|ensuring product quality
+Sales Manager|Marketing, Product Management|sales targets and market reach|achieving sales targets and expanding market reach
+Marketing Manager|Sales, Product Management|campaign success and lead generation|driving brand awareness and market penetration
+HR Manager|All roles|employee satisfaction and retention|fostering a positive work environment
+IT Support|All roles|issue resolution and response time|ensuring smooth IT operations

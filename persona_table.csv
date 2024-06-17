@@ -1,0 +1,13 @@
+persona|resourcing|capacity|key_metrics|company_goals|values
+CEO|Overall company resources|Strategic oversight|Company growth, market share|Vision, long-term strategy|Leadership, integrity, innovation
+CTO|Technical resources|Strategic tech decisions|System reliability, innovation rate|Tech innovation, scalability|Innovation, quality, foresight
+CFO|Financial resources|Strategic financial management|Profitability, cost efficiency|Financial stability, growth|Integrity, accountability, transparency
+COO|Operational resources|Operational efficiency|Operational efficiency, process improvement|Operational excellence, efficiency|Efficiency, reliability, continuous improvement
+Product Manager|Product development resources|40 story points/week|Product success, user satisfaction|Deliver market-leading products|User focus, innovation, collaboration
+Engineering Manager|Engineering team resources|50 story points/week|Code quality, delivery timelines|Efficient and high-quality product delivery|Quality, teamwork, innovation
+Software Engineer|Individual contribution|20 story points/week|Code quality, feature completion|Deliver high-quality code|Quality, innovation, reliability
+QA Engineer|QA team resources|20 story points/week|Bug detection rate, test coverage|Ensure product quality|Thoroughness, reliability, user focus
+Sales Manager|Sales team resources|30 story points/week|Sales revenue, conversion rate|Achieve sales targets, expand market reach|Persuasion, resilience, customer focus
+Marketing Manager|Marketing team resources|30 story points/week|Campaign success, lead generation|Brand awareness, market penetration|Creativity, customer focus, innovation
+HR Manager|HR team resources|20 story points/week|Employee satisfaction, retention rate|Foster positive work environment|Empathy, integrity, support
+IT Support|IT support resources|20 story points/week|Issue resolution rate, response time|Ensure smooth IT operations|Reliability, responsiveness, problem-solving
