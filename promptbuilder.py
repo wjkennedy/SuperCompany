@@ -8,7 +8,12 @@ import numpy as np
 persona_table = pd.read_csv('persona_table.csv', delimiter='|')
 rasci_table = pd.read_csv('rasci_table.csv', delimiter='|')
 interaction_details_df = pd.read_csv('interaction_details.csv', delimiter='|')
-persona_knowledge = pd.read_csv('persona_knowledge.csv', delimiter='|')
+# Load optional persona knowledge if available
+if os.path.exists('persona_knowledge.csv'):
+    persona_knowledge = pd.read_csv('persona_knowledge.csv', delimiter='|')
+    persona_knowledge_dict = persona_knowledge.set_index('persona').T.to_dict()
+else:
+    persona_knowledge_dict = {}
 
 # Debugging: Print the column names to ensure they match
 print("Interaction Details Columns: ", interaction_details_df.columns)
@@ -26,8 +31,7 @@ persona_table['values'] = persona_table['values'].fillna('')
 max_values_length = persona_table['values'].str.split(', ').apply(len).max()
 persona_table['values'] = persona_table['values'].apply(lambda x: ', '.join(x.split(', ') + [''] * (max_values_length - len(x.split(', ')))))
 
-# Create a dictionary from the persona_knowledge DataFrame
-persona_knowledge_dict = persona_knowledge.set_index('persona').T.to_dict()
+# persona_knowledge_dict is populated above if the optional file exists
 
 # Print the columns and the first few rows of the DataFrame for debugging
 print("Persona Table Columns: ", persona_table.columns)
@@ -35,10 +39,9 @@ print("First few rows of the Persona Table:")
 print(persona_table.head())
 
 # Define the template for the prompts
-template = """As a {persona}, your primary objective is Lead Generation and Business Development, adopting the goals and principles of Atlassian's Partner program. Additionally, you are responsible for {resourcing} and ensuring {key_metrics}. Your capacity is {capacity}. Key metrics include {key_metrics}. Your company goals are {company_goals}. Your core values are {values}. Key tools used: {tools}.
+template = """As a {persona}, you operate within the Tetrix Prism model where Strategy, Culture, and Execution form a balanced triad. You are responsible for {resourcing} and ensuring {key_metrics}. Your capacity is {capacity}. Company goals: {company_goals}. Core values: {values}. Key tools: {tools}.
 
-When interacting with {relevant_roles}, emphasize {key_points_of_interaction_and_collaboration}. Ensure that {specific_actions_or_behaviors}.
-"""
+When interacting with {relevant_roles}, highlight {key_points_of_interaction_and_collaboration}. Ensure that {specific_actions_or_behaviors}. This framework mirrors a fractal pyramid so changes at the strategic level cascade cleanly through execution."""
 
 # Generate prompts based on the template and interaction details
 def generate_prompt(row):
