@@ -6,6 +6,10 @@ Welcome to the Persona-Driven GPT Generation project! This repository is designe
 
 This project leverages the power of GPT-4 to automate the creation and organization of corporate personas, providing them with detailed knowledge files and specific actions to enhance their effectiveness. Each persona is aligned with corporate goals, ensuring a cohesive and strategic approach to business development and operational efficiency.
 
+## Tetrix Prism (ELICEO)
+
+The generation process is guided by the **Tetrix Prism** framework—a fractal model where **Strategy**, **Culture**, and **Execution** form a balanced triad. This approach, sometimes referred to as **ELICEO**, emphasizes how small strategic shifts cascade cleanly through the organization while preserving autonomy at every layer. Viewing the company through this prism simplifies communication and highlights how customer-facing work connects back to internal teams.
+
 ### Key Features
 
 - **Automated Persona Generation**: Generate detailed personas with specific responsibilities and knowledge areas.
@@ -102,5 +106,5 @@ For more information, visit [A9 Consulting Group](https://www.a9consultinggroup.
 
 ---
 
-Happy coding! 🚀
+Happy coding!
 
